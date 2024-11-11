@@ -5,9 +5,13 @@ checkout here:https://riggle-assesment.netlify.app/
 
 # 📦 Technologies Used
 React.js - Frontend library for building UI components.
+
 Chart.js - Data visualization library for creating interactive charts.
+
 Ant Design - UI library for pre-designed components.
+
 Tailwind CSS - Utility-first CSS framework for custom styling.
+
 Netlify - CI/CD tool to host the Frontend of a website.
 
 # 🎯 Planned Improvements

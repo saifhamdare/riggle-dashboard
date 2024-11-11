@@ -1,13 +1,21 @@
 import React from 'react'
 
-import { Filter, Sales, Login, Teams } from '../Components';
+import { Filter, Sales, Login, Teams, Network, GapAnalysis, Insights, Secondary, SecondaryCoverage, GapAnalysisTeam, Payment } from '../Components';
+
 function Home() {
   return (
     <div  >
-        <Filter/>
+   <Filter/>
         <Sales/>
-        <Teams/>
-        <Login/>
+           <Teams/>
+        <Login/> 
+        <Network/>
+        <Insights/>
+        <GapAnalysis/>
+        <Secondary/>
+        <SecondaryCoverage/>
+        <GapAnalysisTeam/>
+        <Payment/>
     </div>
   )
 }

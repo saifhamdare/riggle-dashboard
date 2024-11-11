@@ -13,6 +13,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  font-family:Poppins,  sans-serif;
+}
 .ant-menu-item-selected{
   background: linear-gradient(93.32deg, rgba(57, 206, 243, 0.2) -19.01%, #FFFFFF 99.56%);
 }
@@ -26,4 +29,20 @@ font-weight: 500;
 }
 .ant-select-selector{
   font-size: 10px !important;
+}
+.scrollbar-custom {
+  scrollbar-color: #ffffff #2632381A; /* Thumb color #ffffff, track color #ffffff */
+  scrollbar-width: thin;
+}
+
+/* For browsers that support the ::-webkit-scrollbar pseudo-element */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #fdfdfd; /* Scrollbar track color */
 }

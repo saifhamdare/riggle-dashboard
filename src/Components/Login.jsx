@@ -3,21 +3,8 @@ import React, { useEffect, useState } from 'react'
 import {SettingOutlined} from '@ant-design/icons'
 import fetchData from '../api/apiStore';
 import ChartsComponent from '../utilities/ChartsComponent';
-const ProgressBar = ({ progress,color }) => {
-    return (
-      <div className='' style={{ width: '100%', backgroundColor: '', borderRadius: '8px' }}>
-        <div
-          style={{
-            height: '10px',
-            width: `${progress}%`,
-            backgroundColor: color,
-            borderRadius: '8px',
-            transition: 'width 0.2s ease-out',
-          }}
-        />
-      </div>
-    );
-  };
+import ProgressBar from '../utilities/ProgressBar';
+
   const options = {
     responsive: true,
     plugins: {
@@ -144,16 +131,16 @@ function Login() {
         <div className="border-2 max-w-md w-full border-[#39CEF3] p-2 sm:p-4 ms:m-2">
             <div className="border-b-2 border-[#d2d2d2]">
                 <h1 className='text-3xl sm:text-5xl font-semibold' >{loginData.total_user}</h1>
-                <h3 className='text-xl font-semibold'>Attandance</h3>
+                <h3 className='text-base font-semibold'>Attandance</h3>
             </div>
-            <div className="max-w-xs mx-auto">
-                <div className="flex justify-center items-center">
-                    <p className=' font-medium w-24'>Live :</p>
+            <div className="max-w-sm mx-auto">
+                <div className="grid grid-cols-12 gap-1 items-center">
+                    <p className=' font-medium col-span-4'>Live :</p>
                {loginData.active_users    && <ProgressBar  progress={loginData.active_users}  color={"#2EC315"}/>}
              <p className=' font-medium'>{loginData.active_users}</p>
                 </div>
-                <div className="flex justify-center items-center">
-                    <p className=' font-medium w-24'>Offline : </p>
+                <div className="grid grid-cols-12 gap-1 items-center">
+                    <p className=' font-medium col-span-4'>Offline : </p>
 
             {loginData.inactive_users &&        <ProgressBar  progress={loginData.inactive_users} color={"#E42B1F"}/>}
                     <p className=' font-medium '>{loginData.inactive_users}</p>

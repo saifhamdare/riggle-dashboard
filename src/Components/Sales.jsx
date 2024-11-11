@@ -17,6 +17,7 @@ const chartData = useMemo(() => ({
         data: salesData.length ? salesData.map(item => 15000000) : [],
         backgroundColor: '#FC8C4D',
         borderWidth: 1,
+       
         
       },
       {
@@ -42,6 +43,7 @@ const chartData = useMemo(() => ({
         title: {
           display: true,
           text: 'Month/Year', 
+          width:10
         },
       },
       y: {

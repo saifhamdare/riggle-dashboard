@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  UserOutlined ,MenuUnfoldOutlined,MenuFoldOutlined ,VideoCameraOutlined,UploadOutlined,BellOutlined,PlayCircleOutlined} from '@ant-design/icons';
+import {  UserOutlined ,MenuUnfoldOutlined,MenuFoldOutlined ,VideoCameraOutlined,UploadOutlined,BellOutlined,PlayCircleOutlined, AimOutlined, LikeOutlined, CodeSandboxOutlined, TrophyOutlined} from '@ant-design/icons';
 import { Button, Layout, Menu } from 'antd';
 import Home from './Page/Home';
 const { Header, Content, Sider } = Layout;
@@ -13,6 +13,15 @@ function App() {
 <Layout>
       <Header
         className='flex items-center justify-between bg-white px-4'
+        style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 1,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+          
       >
         <span className='flex items-center'>
        <div className=" w-20 sm:w-40">
@@ -37,7 +46,7 @@ function App() {
          />
       <BellOutlined className='text-xl sm:text-2xl size-10 ' 
       />
-      <span className='border-b-8 border-[#39CEF3] flex  items-center' >
+      <span className='border-b-4 border-[#39CEF3] flex  items-center' >
       <div className=" w-12 sm:w-14">
         <img  className='text-xl m-auto sm:text-2xl size-10 border-2 border-[#39CEF3] rounded-full' src="https://i.ibb.co/2yYLBBN/avatar.png" alt="" />
       </div>
@@ -46,7 +55,7 @@ function App() {
           </span>
       </Header>
       <Layout>
-      <Sider className='bg-white mt-4 ' trigger={null} collapsible collapsed={collapsed}>
+      <Sider className='bg-white mt-4 '  trigger={null} collapsible collapsed={collapsed}>
         
         <Menu
           mode="inline"
@@ -54,27 +63,29 @@ function App() {
           items={[
             {
               key: '1',
-              icon: <UserOutlined className=' text-3xl'  />,
+              icon: <CodeSandboxOutlined className=' text-3xl'  />,
               label: 'Dashboard',
             },
             {
               key: '2',
-              icon: <VideoCameraOutlined className=' text-3xl' />,
+              icon: <TrophyOutlined className=' text-3xl' />,
               label: 'Brands',
             },
             {
               key: '3',
-              icon: <UploadOutlined className=' text-3xl'  />,
+              
+              icon: <UserOutlined className=' text-3xl'  />,
               label: 'Sales Person',
             },
             {
               key: '4',
-              icon: <UploadOutlined className=' text-3xl'  />,
+              
+              icon: <AimOutlined className=' text-3xl'  />,
               label: 'Target',
             },
             {
               key: '5',
-              icon: <UploadOutlined className=' text-3xl' />,
+              icon: <LikeOutlined className=' text-3xl' />,
               label: 'Channel Partners',
             },
           ]}

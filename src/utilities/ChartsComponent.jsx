@@ -34,8 +34,8 @@ const ChartsComponent = ({ type = 'bar', data={}, options={},result }) => {
 console.log('this is running',type)
 useEffect(()=>{},[result])
   return (
-    <div style={{ width: '100%', height: (type=="doughnut"?"":'400px') }}>
-      <Chart data={data} options={options} />
+    <div style={{ textAlign:"-webkit-center", width: '100%', height: (type=="doughnut"?"":'400px') }}>
+      <Chart  data={data} options={options} />
     </div>
   );
 };

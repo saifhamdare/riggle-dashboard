@@ -18,7 +18,11 @@ Netlify - CI/CD tool to host the Frontend of a website.
 The following enhancements are being considered to further improve the dashboard's usability:
 
 UI Enhancements: Refinements to improve overall visual appeal and user experience.
+
 Dark Mode: Toggle between light and dark themes to suit different viewing preferences.
+
 Advanced Filtering Options: Provide filters to refine data visualizations for more specific insights.
+
 User Profiles and Permissions: Facilitate multi-user access with custom profiles and permissions.
+
 Export Options: Enable users to download charts and data in formats like PDF and CSV.

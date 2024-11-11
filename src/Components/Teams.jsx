@@ -9,7 +9,6 @@ function Teams() {
     setLoading(true);
     try {
       const response = await fetchData("503c16d9-da3c-406b-b162-1414e969e83c");
-      console.log(response.team_snapshot);
       setTeamData(response.team_snapshot);
     } catch (error) {
       console.error("Error fetching sales data:", error);
@@ -17,7 +16,6 @@ function Teams() {
       setLoading(false);
     }
   };
-  console.log(teamData.length ? teamData.map((item) => item) : []);
   useEffect(() => {
     if (teamData.length === 0) {
       fetchTeamData();

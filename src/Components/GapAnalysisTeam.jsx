@@ -10,7 +10,7 @@ function GapAnalysisTeam() {
         setLoading(true); 
         try {
           const response = await fetchData('fb400df7-47bd-49b2-83b2-a1d0c19c48ab');
-          console.log(response.team_gap_analysis);
+      
           setgapAnalysisData(response.team_gap_analysis);
         } catch (error) {
           console.error('Error fetching gapAnalysis data:', error);
@@ -18,7 +18,6 @@ function GapAnalysisTeam() {
           setLoading(false); 
         }
     }
-    console.log(gapAnalysisData?.length ? gapAnalysisData.map(item => item.achieved) : [])
     useEffect(() => {
         if (gapAnalysisData.length === 0) {
           fetchgapAnalysisData();

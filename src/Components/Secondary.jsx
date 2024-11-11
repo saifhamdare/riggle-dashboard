@@ -110,7 +110,7 @@ function Secondary() {
     setLoading(true);
     try {
       const response = await fetchData("27735c0d-0cf5-4812-8cb0-8fb5a20f14a8");
-      console.log(response,"ehereeeeeeeeeeeee");
+
       setSecondaryData(response);
     } catch (error) {
       console.error("Error fetching sales data:", error);
@@ -118,7 +118,6 @@ function Secondary() {
       setLoading(false);
     }
   };
-  console.log(SecondaryData.length ? SecondaryData.map((item) => item) : []);
   useEffect(() => {
     if (SecondaryData.length === 0) {
       fetchSecondaryData();

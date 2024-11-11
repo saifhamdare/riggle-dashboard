@@ -103,7 +103,6 @@ function Login() {
       setLoading(true);
       try {
         const response = await fetchData("d2b28be4-a471-44cb-a0d2-02b86986cb4d");
-        console.log(response);
         setLoginData(response);
       } catch (error) {
         console.error("Error fetching sales data:", error);
@@ -111,7 +110,6 @@ function Login() {
         setLoading(false);
       }
     };
-    console.log(loginData.length ? loginData.map((item) => item) : []);
     useEffect(() => {
       if (loginData.length === 0) {
         fetchLoginData();

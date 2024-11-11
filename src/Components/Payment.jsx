@@ -11,7 +11,7 @@ const fetchpaymentData= async()=>{
     setLoading(true); 
     try {
       const response = await fetchData('188f23d4-2281-4ced-bfca-ba833524e290');
-      console.log(response);
+
       setpaymentData(response.data);
     } catch (error) {
       console.error('Error fetching sales data:', error);

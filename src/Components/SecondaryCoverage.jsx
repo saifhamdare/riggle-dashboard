@@ -61,7 +61,7 @@ function SecondaryCoverage() {
         setLoading(true); 
         try {
           const response = await fetchData('73c7610e-5ceb-47f1-91a4-0e1f6fab1e5d');
-          console.log(response.secondary_coverage);
+
           setSalesData(response.secondary_coverage);
         } catch (error) {
           console.error('Error fetching sales data:', error);
@@ -69,7 +69,6 @@ function SecondaryCoverage() {
           setLoading(false); 
         }
     }
-    console.log(salesData.length ? salesData.map(item => item.achieved) : [])
     useEffect(() => {
         if (salesData.length === 0) {
           fetchSalesData();

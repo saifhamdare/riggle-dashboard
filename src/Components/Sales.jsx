@@ -59,7 +59,7 @@ const fetchSalesData= async()=>{
     setLoading(true); 
     try {
       const response = await fetchData('d79a0398-90e3-49d4-ad45-c688ef5187ee');
-      console.log(response);
+
       setSalesData(response.sales_snapshot);
     } catch (error) {
       console.error('Error fetching sales data:', error);
@@ -67,7 +67,6 @@ const fetchSalesData= async()=>{
       setLoading(false); 
     }
 }
-console.log(salesData.length ? salesData.map(item => item.achieved) : [])
 useEffect(() => {
     if (salesData.length === 0) {
       fetchSalesData();

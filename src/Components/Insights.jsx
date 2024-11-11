@@ -10,7 +10,6 @@ function Insights() {
     setLoading(true);
     try {
       const response = await fetchData("056d103a-798d-4193-b5a8-2ac7790dfd19");
-      console.log(response.insight_snapshot_data);
       setinsightsData(response.insight_snapshot_data);
     } catch (error) {
       console.error("Error fetching sales data:", error);
@@ -18,7 +17,6 @@ function Insights() {
       setLoading(false);
     }
   };
-  console.log(insightsData.length ? insightsData.map((item) => item) : []);
   useEffect(() => {
     if (insightsData.length === 0) {
       fetchinsightsData();

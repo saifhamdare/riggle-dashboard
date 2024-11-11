@@ -86,7 +86,6 @@ function Insights() {
             <div className=" col-span-7">
               <div className="employee-info sm:flex font-medium text-sm gap-3">
                 <h2 className="text-sm">{item.name} </h2>
-                {/* <h4 className=" text-sm ">( {item.quantity} )</h4> */}
               </div>
               <div className="sales-info sm:flex text-[8px]  justify-around">
                 <h2 className=" text-[10px] ">Target: {item.target}</h2>
@@ -120,7 +119,6 @@ function Insights() {
             <div className=" col-span-7">
               <div className="employee-info sm:flex font-medium text-sm gap-3">
                 <h2 className="text-sm">{item.name} </h2>
-                {/* <h4 className=" text-sm ">( {item.quantity} )</h4> */}
               </div>
               <div className="sales-info sm:flex text-[8px]  justify-around">
                 <h2 className=" text-[10px] ">Target: {item.target}</h2>

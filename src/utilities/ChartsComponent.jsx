@@ -1,9 +1,8 @@
-// ChartComponent.js
+
 import React, { useEffect } from 'react';
 import { Chart as ChartJS, CategoryScale,ArcElement, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar, Line, Pie, Doughnut, PolarArea, Radar, Bubble, Scatter } from 'react-chartjs-2';
 
-// Register the necessary components with Chart.js
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -16,7 +15,6 @@ ChartJS.register(
   Legend
 );
 const ChartsComponent = ({ type = 'bar', data={}, options={},result }) => {
-  // Define a chart mapping to link chart types to the corresponding Chart.js components
   const chartMapping = {
     bar: Bar,
     line: Line,
@@ -28,10 +26,8 @@ const ChartsComponent = ({ type = 'bar', data={}, options={},result }) => {
     scatter: Scatter,
   };
 
-  // Select the appropriate chart component based on the "type" prop
   const Chart = chartMapping[type] || Bar;
 
-console.log('this is running',type)
 useEffect(()=>{},[result])
   return (
     <div style={{ textAlign:"-webkit-center", width: '100%', height: (type=="doughnut"?"":'400px') }}>

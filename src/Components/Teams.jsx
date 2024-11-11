@@ -29,8 +29,7 @@ function Teams() {
         <div className="uppercase p-2  sm:px-10 sm:py-2 mb-2 sm:mb-0 text-white font-medium inline  bg-[#39CEF3] ">
           Team Snapshot
         </div>
-        {/* <Button className='w-32 flex justify-between border-2 border-[#39CEF3] text-[#39CEF3] mr-4'  iconPosition="end" icon={<SettingOutlined className='  ' />}>Brand</Button> */}
-      </div>
+     </div>
       <div className="tab-container flex justify-evenly flex-wrap">
         <div className="max-w-xs w-full">
           <div className="tab p-1 m-2 border-[#39CEF3] border-2 h-96 overflow-y-scroll overflow-hidden scrollbar-custom">

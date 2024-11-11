@@ -79,7 +79,6 @@ const chartData4 = {
       ],
       borderWidth: 3,
       centerText: {
-          text: 'Hello', // Text to display in the center
           fontSize: 24,
           fontColor: '#333',
         },

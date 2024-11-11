@@ -46,14 +46,12 @@ function SecondaryCoverage() {
           x: {
             title: {
               display: true,
-            //   text: 'Month/Year', 
               width:10
             },
           },
           y: {
             title: {
               display: true,
-            //   text: 'Achieved Sales ', 
             },
             beginAtZero: true, 
           },
@@ -76,8 +74,7 @@ function SecondaryCoverage() {
         if (salesData.length === 0) {
           fetchSalesData();
         }
-      }, []);
-    //   if (loading) return <div>Loading...</div>; 
+      }, []); 
       return (
         <div className='bg-white border-2 border-[#39CEF3] py-4 my-5'>
         <div className="flex justify-between flex-wrap">

@@ -73,7 +73,6 @@ useEffect(() => {
       fetchSalesData();
     }
   }, []);
-//   if (loading) return <div>Loading...</div>; 
   return (
     <div className='bg-white border-2 border-[#39CEF3] py-4 my-5'>
     <div className="flex justify-between flex-wrap">

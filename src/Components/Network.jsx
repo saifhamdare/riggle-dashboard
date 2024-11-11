@@ -26,7 +26,6 @@ function Network() {
     }
   }, [networkData]);
 
-  // Helper function to get data safely
   const getValue = (section, key) => {
     return networkData?.[section]?.find((item) => Object.keys(item)[0] === key)?.[key] || 0;
   };
@@ -64,7 +63,6 @@ const colors = {
           <div className="max-w-sm mx-auto mt-2 ">
             {channelPartner.map((key, index) => (
               <div className="grid grid-cols-12 gap-1 items-center " key={index}>
-              {/* <div className="flex justify-center items-center" key={index}> */}
                 <p className="font-medium col-span-4">{key.replace(/_/g, ' ').replace(/(^|\s)\S/g, l => l.toUpperCase())}:</p>
                 <ProgressBar progress={getValue('primary', key)} color={colors[key]} />
                 <p className="font-medium">{getValue('primary', key)}</p>

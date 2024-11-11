@@ -1,11 +1,14 @@
 # Dashboard Project
 A customizable, responsive dashboard built with React, featuring data visualizations powered by Chart.js and a user-friendly UI styled with Ant Design and Tailwind CSS. This project aims to offer an accessible, dynamic interface for data tracking and insights.
 
+checkout here:https://riggle-assesment.netlify.app/
+
 # 📦 Technologies Used
 React.js - Frontend library for building UI components.
 Chart.js - Data visualization library for creating interactive charts.
 Ant Design - UI library for pre-designed components.
 Tailwind CSS - Utility-first CSS framework for custom styling.
+Netlify - CI/CD tool to host the Frontend of a website.
 
 # 🎯 Planned Improvements
 The following enhancements are being considered to further improve the dashboard's usability:
